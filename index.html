@@ -215,7 +215,7 @@
         <td><input id="b_extra_amt" class="amt-input readonly-cell" type="number" placeholder="0" readonly tabindex="-1" /></td>
       </tr>
       <tr>
-        <td class="desc-cell">Daily Allowance</td>
+        <td class="desc-cell">Driver Allowance</td>
         <td>
           <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
             <span style="font-size:11px;white-space:nowrap;">₹</span>
@@ -628,7 +628,7 @@ function generatePDF() {
   const billRows = [
     { desc: 'Ride Fare',        rate: rideRateStr,   cons: rideConsStr,   amt: nv('b_ride_amt')  },
     { desc: 'Extra KM',         rate: extraRateStr,  cons: extraConsStr,  amt: nv('b_extra_amt') },
-    { desc: 'Daily Allowance',  rate: dailyRateStr,  cons: dailyConsStr,  amt: nv2('b_daily_amt') },
+    { desc: 'Driver Allowance',  rate: dailyRateStr,  cons: dailyConsStr,  amt: nv2('b_daily_amt') },
     { desc: 'Night Allowance',  rate: nightRateStr,  cons: nightConsStr,  amt: nv2('b_night_amt') },
     { desc: 'Parking',          rate: parkRateStr,   cons: parkConsStr,   amt: nv('b_park_amt')  },
     { desc: 'Toll Tax',         rate: sv('b_toll_rate'), cons: '',         amt: nv('b_toll_amt') },
